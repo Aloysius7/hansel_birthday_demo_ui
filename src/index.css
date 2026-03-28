@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 33% 95%;
+    --foreground: 25 30% 20%;
+
+    --card: 33 50% 93%;
+    --card-foreground: 25 30% 20%;
+
+    --popover: 33 50% 93%;
+    --popover-foreground: 25 30% 20%;
+
+    --primary: 22 22% 56%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 27 25% 65%;
+    --secondary-foreground: 25 30% 15%;
+
+    --muted: 33 40% 90%;
+    --muted-foreground: 25 15% 45%;
+
+    --accent: 72 20% 66%;
+    --accent-foreground: 25 30% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 27 25% 80%;
+    --input: 27 25% 80%;
+    --ring: 22 22% 56%;
+
+    --radius: 0.75rem;
+
+    --cream: 37 63% 87%;
+    --soft-green: 72 20% 66%;
+    --warm-brown: 22 22% 56%;
+    --soft-brown: 27 25% 65%;
+
+    --gradient-warm: linear-gradient(135deg, hsl(37, 63%, 87%), hsl(27, 25%, 65%));
+    --gradient-hero: linear-gradient(180deg, hsl(37, 63%, 92%) 0%, hsl(33, 50%, 88%) 50%, hsl(27, 25%, 80%) 100%);
+    --gradient-glow: radial-gradient(circle, hsl(37, 63%, 87%, 0.6), transparent 70%);
+
+    --shadow-soft: 0 8px 32px hsl(22, 22%, 56%, 0.15);
+    --shadow-glow: 0 0 40px hsl(37, 63%, 87%, 0.5);
+
+    --font-display: 'Playfair Display', serif;
+    --font-body: 'Lora', serif;
+    --font-script: 'Dancing Script', cursive;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .font-script {
+    font-family: var(--font-script);
+  }
+
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .gradient-warm {
+    background: var(--gradient-warm);
+  }
+
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, hsl(var(--warm-brown)), hsl(var(--soft-brown)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .btn-birthday {
+    @apply px-8 py-3 rounded-full font-display text-lg tracking-wide transition-all duration-300;
+    background: linear-gradient(135deg, hsl(var(--warm-brown)), hsl(var(--soft-brown)));
+    color: hsl(var(--primary-foreground));
+    box-shadow: 0 4px 20px hsl(var(--warm-brown) / 0.3);
+  }
+
+  .btn-birthday:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 30px hsl(var(--warm-brown) / 0.45);
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+@keyframes sparkle {
+  0%, 100% { opacity: 0; transform: scale(0); }
+  50% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes confetti-fall {
+  0% { transform: translateY(-100vh) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+}
+
+@keyframes balloon-rise {
+  0% { transform: translateY(100vh) rotate(-5deg); opacity: 0; }
+  10% { opacity: 1; }
+  100% { transform: translateY(-120vh) rotate(5deg); opacity: 0; }
+}
