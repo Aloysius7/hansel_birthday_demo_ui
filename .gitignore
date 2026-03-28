@@ -12,6 +12,17 @@ dist
 dist-ssr
 *.local
 
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Loose image folders (duplicates of src/assets)
+Cool/
+Images/
+Mirror Selfies/
+Group Photos/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
