@@ -18,6 +18,9 @@ import cool5 from "@/assets/WhatsApp Image 2026-03-27 at 11.54.11 PM.jpeg";
 import cool6 from "@/assets/WhatsApp Image 2026-03-27 at 11.55.30 PM.jpeg";
 import cool7 from "@/assets/WhatsApp Image 2026-03-28 at 12.03.12 AM (1).jpeg";
 import cool8 from "@/assets/WhatsApp Image 2026-03-27 at 11.54.11 PM (1).jpeg";
+import cool9 from "@/assets/Hans_cool1.jpeg";
+import cool10 from "@/assets/Hans_cool2.jpeg";
+import cool11 from "@/assets/Hans_cool3.jpeg";
 import group0 from "@/assets/WhatsApp Image 2026-03-28 at 9.22.29 PM.jpeg";
 import group1 from "@/assets/WhatsApp Image 2026-03-27 at 11.55.04 PM.jpeg";
 import group2 from "@/assets/WhatsApp Image 2026-03-29 at 12.05.14 AM (1).jpeg";
@@ -30,7 +33,7 @@ import group8 from "@/assets/WhatsApp Image 2026-03-28 at 11.22.49 PM.jpeg";
 
 const categoryImages: Record<string, string[]> = {
   mirrors: [mirrors0,mirrors1,mirrors2,mirrors3,mirrors4,mirrors5,mirrors6,mirrors7,mirrors8],
-  cool: [cool0,cool1,cool2,cool3,cool4,cool5,cool6,cool7,cool8],
+  cool: [cool0,cool1,cool2,cool3,cool4,cool5,cool6,cool7,cool8,cool9,cool10,cool11],
   group: [group0,group1,group2,group3,group4,group5,group6,group7,group8],
 };
 

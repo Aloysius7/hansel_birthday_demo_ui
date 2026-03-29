@@ -9,6 +9,7 @@ import natashaImg from "@/assets/Nuts 2.jpeg";
 import rahulImg from "@/assets/Screenshot from 2026-03-29 02-42-16.png";
 import mathewImg from "@/assets/mATH.jpeg";
 import aloyImg from "@/assets/ST2_2.jpeg";
+import hanselChildPool from "@/assets/Hansel_child_pool.jpeg";
 
 interface PoemStanzaProps {
   title: string;
@@ -393,7 +394,8 @@ const poemData = [
     title: "To Our Dearest Hansel",
     emoji: "🎂",
     imageRight: undefined as string | undefined,
-    imageLeft: undefined as string | undefined,
+    imageLeft: hanselChildPool,
+    splitTextRight: true,
     lines: [
       "So here's to you, our dearest friend,",
       "A love for you that has no end.",
